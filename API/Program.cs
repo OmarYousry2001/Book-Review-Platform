@@ -80,19 +80,21 @@ app.UseAuthorization();
 app.UseSwagger();
 if (app.Environment.IsDevelopment())
 {
+
     app.UseSwaggerUI();
 }
 else
 {
+
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/Endpoint/swagger/v1/swagger.json", "My API V1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
         c.RoutePrefix = "Endpoint"; // Set this to match your API path if needed
     });
 
     app.MapGet("/", async context =>
     {
-        context.Response.Redirect("/Endpoint/Endpoint/index.html");
+        context.Response.Redirect("/Endpoint/");
         await context.Response.CompleteAsync(); // Ensure the async Task is returned
     });
 }
