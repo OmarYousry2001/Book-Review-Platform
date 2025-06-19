@@ -420,4 +420,10 @@
   <data name="YouWontBeAbleToRevertThis" xml:space="preserve">
     <value>You won't be able to revert this</value>
   </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="RateLimitExceeded" xml:space="preserve">
+    <value>Rate limit exceeded. Try again later</value>
+  </data>
 </root>

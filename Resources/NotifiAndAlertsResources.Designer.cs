@@ -565,6 +565,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to لم يتم العثور.
+        /// </summary>
+        public static string NotFound {
+            get {
+                return ResourceManager.GetString("NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to إشعار.
         /// </summary>
         public static string Notification {
@@ -750,6 +759,15 @@ namespace Resources {
         public static string ProfileUpdateFailedAlert {
             get {
                 return ResourceManager.GetString("ProfileUpdateFailedAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم تجاوز الحد المسموح للطلبات. حاول لاحقًا.
+        /// </summary>
+        public static string RateLimitExceeded {
+            get {
+                return ResourceManager.GetString("RateLimitExceeded", resourceCulture);
             }
         }
         

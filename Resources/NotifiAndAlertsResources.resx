@@ -420,4 +420,10 @@
   <data name="YouWontBeAbleToRevertThis" xml:space="preserve">
     <value>لن تتمكن من التراجع عن هذا</value>
   </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>لم يتم العثور</value>
+  </data>
+  <data name="RateLimitExceeded" xml:space="preserve">
+    <value>تم تجاوز الحد المسموح للطلبات. حاول لاحقًا</value>
+  </data>
 </root>

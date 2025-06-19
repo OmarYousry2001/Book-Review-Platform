@@ -26,4 +26,9 @@
     <ProjectReference Include="..\Domains\Domains.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contracts\Repositories\Custom\" />
+    <Folder Include="Repositories\Custom\" />
+  </ItemGroup>
+
 </Project>

@@ -261,4 +261,22 @@
   <data name="Marketer" xml:space="preserve">
     <value>Marketer</value>
   </data>
+  <data name="Invalid_UserName" xml:space="preserve">
+    <value>Invalid_UserName</value>
+  </data>
+  <data name="Password_Requires_NonAlphanumeric" xml:space="preserve">
+    <value>The password must contain at least one non-alphanumeric character</value>
+  </data>
+  <data name="Password_Requires_Digit" xml:space="preserve">
+    <value>The password must contain at least one number</value>
+  </data>
+  <data name="Password_Requires_Lower" xml:space="preserve">
+    <value>The password must contain at least one lowercase letter</value>
+  </data>
+  <data name="Password_Requires_Upper" xml:space="preserve">
+    <value>The password must contain at least one uppercase letter</value>
+  </data>
+  <data name="RoleAssignmentFailed" xml:space="preserve">
+    <value>Failed to assign the user to the role</value>
+  </data>
 </root>

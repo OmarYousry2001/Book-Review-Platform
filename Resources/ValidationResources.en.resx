@@ -543,4 +543,16 @@
   <data name="InvalidEmailOrPassword" xml:space="preserve">
     <value>Invalid email or password</value>
   </data>
+  <data name="InvalidData" xml:space="preserve">
+    <value>Invalid data</value>
+  </data>
+  <data name="MappingFailed" xml:space="preserve">
+    <value>Failed to map the data</value>
+  </data>
+  <data name="RefreshTokenNotFound" xml:space="preserve">
+    <value>Refresh Token Not Found</value>
+  </data>
+  <data name="InvalidOrExpiredRefreshToken" xml:space="preserve">
+    <value>Invalid Or Expired Refresh Token</value>
+  </data>
 </root>

@@ -592,6 +592,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to بيانات غير صالحة.
+        /// </summary>
+        public static string InvalidData {
+            get {
+                return ResourceManager.GetString("InvalidData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to البريد الإلكتروني أو كلمة المرور غير صحيحة.
         /// </summary>
         public static string InvalidEmailOrPassword {
@@ -624,6 +633,15 @@ namespace Resources {
         public static string InvalidNationalId {
             get {
                 return ResourceManager.GetString("InvalidNationalId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رمز التحديث غير صالح أو منتهي الصلاحية.
+        /// </summary>
+        public static string InvalidOrExpiredRefreshToken {
+            get {
+                return ResourceManager.GetString("InvalidOrExpiredRefreshToken", resourceCulture);
             }
         }
         
@@ -759,6 +777,15 @@ namespace Resources {
         public static string LongitudeRequired {
             get {
                 return ResourceManager.GetString("LongitudeRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فشل تحويل البيانات.
+        /// </summary>
+        public static string MappingFailed {
+            get {
+                return ResourceManager.GetString("MappingFailed", resourceCulture);
             }
         }
         
@@ -1020,6 +1047,15 @@ namespace Resources {
         public static string ReceiptPaymentPercentageRange {
             get {
                 return ResourceManager.GetString("ReceiptPaymentPercentageRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to لم يتم العثور على رمز التحديث.
+        /// </summary>
+        public static string RefreshTokenNotFound {
+            get {
+                return ResourceManager.GetString("RefreshTokenNotFound", resourceCulture);
             }
         }
         

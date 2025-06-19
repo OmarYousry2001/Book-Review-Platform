@@ -151,6 +151,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to اسم المستخدم غير صالح.
+        /// </summary>
+        public static string Invalid_UserName {
+            get {
+                return ResourceManager.GetString("Invalid_UserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to اسم المستخدم أو كلمة المرور غير صحيحة..
         /// </summary>
         public static string Invalid_UsernamePassword_Couple {
@@ -241,6 +250,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يجب أن تحتوي كلمة المرور على رقم واحد على الأقل.
+        /// </summary>
+        public static string Password_Requires_Digit {
+            get {
+                return ResourceManager.GetString("Password_Requires_Digit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل.
+        /// </summary>
+        public static string Password_Requires_Lower {
+            get {
+                return ResourceManager.GetString("Password_Requires_Lower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يجب أن تحتوي كلمة المرور على رمز غير حرفي.
+        /// </summary>
+        public static string Password_Requires_NonAlphanumeric {
+            get {
+                return ResourceManager.GetString("Password_Requires_NonAlphanumeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل.
+        /// </summary>
+        public static string Password_Requires_Upper {
+            get {
+                return ResourceManager.GetString("Password_Requires_Upper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يجب أن تحتوي كلمات المرور على حرف رقمي واحد على الأقل (&apos;0&apos;-&apos;9&apos;)..
         /// </summary>
         public static string Password_RequiresDigit {
@@ -327,6 +372,15 @@ namespace Resources {
         public static string ResetToken_Invalid {
             get {
                 return ResourceManager.GetString("ResetToken_Invalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فشل في تعيين المستخدم إلى الدور المحدد.
+        /// </summary>
+        public static string RoleAssignmentFailed {
+            get {
+                return ResourceManager.GetString("RoleAssignmentFailed", resourceCulture);
             }
         }
         

@@ -261,4 +261,22 @@
   <data name="Marketer" xml:space="preserve">
     <value>مسوق</value>
   </data>
+  <data name="Invalid_UserName" xml:space="preserve">
+    <value>اسم المستخدم غير صالح</value>
+  </data>
+  <data name="Password_Requires_NonAlphanumeric" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على رمز غير حرفي</value>
+  </data>
+  <data name="Password_Requires_Digit" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على رقم واحد على الأقل</value>
+  </data>
+  <data name="Password_Requires_Lower" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل</value>
+  </data>
+  <data name="Password_Requires_Upper" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل</value>
+  </data>
+  <data name="RoleAssignmentFailed" xml:space="preserve">
+    <value>فشل في تعيين المستخدم إلى الدور المحدد</value>
+  </data>
 </root>
