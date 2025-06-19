@@ -28,17 +28,16 @@ namespace Api.Controllers.Author
         }
 
         /// <summary>
-        /// Registers a new user with the specified role.
+        /// Registers a new user in the system with the default role of 'Reader'
         /// </summary>
         /// <param name="user">User registration information.</param>
-        /// <param name="role">Role assigned to the new user ( "Admin", "Reader" ,"Writer).</param>
         /// <returns>Registration result.</returns>
         [HttpPost("Register")]
-        public async Task<IActionResult> Register([FromBody] UserRegistrationDto user, string role)
+        public async Task<IActionResult> Register([FromBody] UserRegistrationDto user)
         {
             try
             {
-                var entities = await _userRegistrationService.RegisterUserAsync(user, role);
+                var entities = await _userRegistrationService.RegisterUserAsync(user);
                 if (!entities.Success)
                     return BadRequest(new ResponseModel<string>
                     {

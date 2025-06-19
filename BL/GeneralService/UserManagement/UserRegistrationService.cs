@@ -23,7 +23,7 @@ namespace BL.GeneralService.UserManagement
             _mapper = mapper;
         }
 
-        public async Task<BaseResult> RegisterUserAsync(UserRegistrationDto user, string role)
+        public async Task<BaseResult> RegisterUserAsync(UserRegistrationDto user)
         {
             // Map user DTO to ApplicationUser
             var applicationUser = _mapper.MapModel<UserRegistrationDto, ApplicationUser>(user);
@@ -39,10 +39,7 @@ namespace BL.GeneralService.UserManagement
                 IdentityResult addedToRole;
 
                 // Add user to the specified role
-                if (string.IsNullOrEmpty(role))
                  addedToRole = await _userManager.AddToRoleAsync(applicationUser, SD.Roles.Reader);
-                else
-                 addedToRole = await _userManager.AddToRoleAsync(applicationUser, role) ;
 
                 if (!addedToRole.Succeeded)
                 {
@@ -77,73 +74,6 @@ namespace BL.GeneralService.UserManagement
                 Errors = friendlyErrors
             };
         }
-
-        //public async Task<BaseResult> RegisterUserAsync(UserRegistrationDto user, string role)
-        //{
-        //    // Check if the mobile number is already registered
-        //    var existingUser = await _userManager.Users.SingleOrDefaultAsync(u => u.PhoneNumber == user.PhoneNumber);
-        //    if (existingUser != null)
-        //    {
-        //        return new BaseResult
-        //        {
-        //            Success = false,
-        //            Message = string.Format(UserResources.PhoneNumber_Duplicate, user.PhoneNumber),
-        //            Errors = new List<string> { string.Format(UserResources.PhoneNumber_Duplicate, user.PhoneNumber) }
-        //        };
-        //    }
-
-        //    // Map user DTO to ApplicationUser
-        //    var applicationUser = _mapper.MapModel<UserRegistrationDto, ApplicationUser>(user);
-        //    applicationUser.Id = Guid.NewGuid().ToString();
-        //    applicationUser.UserName = user.PhoneNumber;
-        //    applicationUser.PhoneNumber = user.PhoneNumber;
-
-        //    // Generate and save verification code via UserActivationService
-        //    //var codeSent = await _userActivationService.SendActivationCodeAsync(user.PhoneNumber);
-        //    //if (!codeSent)
-        //    //{
-        //    //    return new BaseResult
-        //    //    {
-        //    //        Success = false,
-        //    //        Message = UserResources.VerificationCodeError
-        //    //    };
-        //    //}
-
-        //    // Create the user
-        //    var result = await _userManager.CreateAsync(applicationUser, user.Password);
-
-        //    if (result.Succeeded)
-        //    {
-        //        if (string.IsNullOrEmpty(role))
-        //            role = "user";
-
-        //        // Add user to the specified role
-        //        var addedToRole = (await _userManager.AddToRoleAsync(applicationUser, role)).Succeeded;
-
-        //        if (!addedToRole)
-        //        {
-        //            throw new InvalidOperationException("Failed to add user to the specified role.");
-        //        }
-
-        //        return new BaseResult
-        //        {
-        //            Success = true,
-        //            Message = NotifiAndAlertsResources.RegistrationSuccessful
-        //        };
-        //    }
-
-        //    // Map identity errors to user-friendly messages
-        //    var friendlyErrors = result.Errors
-        //        .Select(e => GetUserFriendlyErrorMessage(e.Code))
-        //        .ToList();
-
-        //    return new BaseResult
-        //    {
-        //        Success = false,
-        //        Message = NotifiAndAlertsResources.RegistrationFailed,
-        //        Errors = friendlyErrors
-        //    };
-        //}
 
         public async Task<BaseResult> UpdateUserAsync(UserRegistrationDto user, bool resetPassword)
         {

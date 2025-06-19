@@ -11,7 +11,7 @@ namespace BL.Contracts.GeneralService.UserManagement
 {
     public interface IUserRegistrationService
     {
-        Task<BaseResult> RegisterUserAsync(UserRegistrationDto user, string role);
+        Task<BaseResult> RegisterUserAsync(UserRegistrationDto user);
         Task<BaseResult> UpdateUserAsync(UserRegistrationDto user, bool resetPassword);
     }
 }
